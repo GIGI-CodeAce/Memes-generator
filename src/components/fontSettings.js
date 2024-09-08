@@ -68,10 +68,10 @@ function Settings() {
     return (
         <>
         <div className="slider-container">
-            {RangeInput('topX', 30, 70, topAxis[0], handleTopX, 'custom-range-circle')}
-            {RangeInput('topY', 50, 84, topAxis[1], handleTopY, 'custom-range-circle')}
-            {RangeInput('bottomX', 30, 70, bottomAxis[0], handleBottomX, 'custom-range-square')}
-            {RangeInput('bottomY', -5, 30, bottomAxis[1], handleBottomY, 'custom-range-square')}
+        {RangeInput('bottomX', 30, 70, bottomAxis[0], handleBottomX, 'custom-range-square')}
+        {RangeInput('bottomY', -5, 30, bottomAxis[1], handleBottomY, 'custom-range-square')}
+        {RangeInput('topX', 30, 70, topAxis[0], handleTopX, 'custom-range-circle')}
+        {RangeInput('topY', 50, 84, topAxis[1], handleTopY, 'custom-range-circle')}
 
             <div className="textSwitches">
                 <span className="slider-value" id="top-label">
