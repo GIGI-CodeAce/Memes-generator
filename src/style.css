@@ -1,12 +1,9 @@
 
- 
- * {
-  box-sizing: border-box;
-}
 
 body {
   font-family: "Karla", sans-serif;
   margin: 0;
+  min-width: 300px;
 }
 
 main {
@@ -23,7 +20,7 @@ main {
 }
 
 .header--image {
-  height: 100%;
+  height: 30px;
   margin-right: 6px;
 }
 
@@ -46,9 +43,9 @@ main {
 
 .form--input {
   font-family: "Karla", sans-serif;
-  border-radius: 5px;
-  border: 1px solid #D5D4D8;
+  border-radius: 5px;  border: 1px solid #D5D4D8;
   text-indent: 5px;
+  min-width: 50px;
 }
 
 .form--button {
@@ -67,14 +64,14 @@ main {
 }
 
 .meme--image {
-  max-width: 100%;
   border-radius: 3px;
 }
 
+
 .text--top{
   position: absolute;
-  width: auto;
   left: 50%;
+  width: auto;
   transform: translateX(-50%);
   margin: 30px 0;
   padding: 0 5px;
@@ -94,16 +91,109 @@ main {
       -2px 0 0 #000,
       2px 2px 5px #000;
 }
-.meme--text top{
 
+@media (min-width: 501px) and (max-width: 600px) {
+  .text--top{
+    font-size: 1.5em;
+  }
+  .meme--image {
+    width: 470px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 649px) {
+  .meme--image {
+    width: 530px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 800px) {
+  .meme--image {
+    width: 600px;
+  }
 }
 
 .bottom {
   bottom: 0%;
   left: 50%;
+  width: 333px;
 }
 
 .top {
   top: 0%;
   left: 50%;
+  width: 333px;
+}
+
+@media (max-width: 400px) {
+  .text--top{
+    font-size: 1.2em;
+  }
+  .meme--image {
+    width: 320px;
+    height: 300px;
+  }
+  .top, .bottom{
+    width: 226px;
+  }
+}
+@media (min-width: 401px) and (max-width: 500px) {
+  .text--top{
+    font-size: 1.2em;
+  }
+  .meme--image {
+    width: 370px;
+    height: 300px;
+  }
+  .top, .bottom{
+    width: 226px;
+  }
+}
+
+
+.slider-container {
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient( to top, rgba(0, 0, 0, 0),hsla(285, 64%, 34%, 0.5), hsla(285, 80%, 47%, 1) 100%);
+  border-radius: 20px;
+}
+
+.slider-value {
+  margin: 5px 0; 
+}
+
+.custom-range-circle,.custom-range-square {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.7; 
+  height: 15px;
+  border: 1px solid black;
+  transition: opacity 0.2s;
+}
+
+.custom-range-cicle:hover, .custom-range-square:hover {
+  opacity: 1;
+}
+
+.custom-range-circle::-webkit-slider-thumb, .custom-range-square::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px; 
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.custom-range-square::-webkit-slider-thumb{
+  border-radius: 0;
+  width: 15px;
+  height: 10px; 
 }
