@@ -3,7 +3,8 @@ import Header from "./components/header"
 import Meme from "./components/meme"
 import Settings from './components/fontSettings.js'
 import FooterPage from './components/footer.js'
-import './style.css'
+import './styles/style.css'
+import './styles/headFoot.css'
 
 export default function App() {
     return (

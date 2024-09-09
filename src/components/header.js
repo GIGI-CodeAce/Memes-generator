@@ -1,6 +1,6 @@
 
 import React from "react";
-import trollFaceImage from "../media/TrollFace.png";
+ import trollFaceImage from "../components/TrollFace.png";
 
 export default function Header() {
 
@@ -8,7 +8,7 @@ export default function Header() {
         <header className="header">
 
         <img 
-        src={trollFaceImage}
+        src= {trollFaceImage }
         className="header--image"
         alt="Troll Face"
         />
