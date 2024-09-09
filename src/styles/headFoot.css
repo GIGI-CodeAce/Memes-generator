@@ -1,0 +1,50 @@
+
+/* header */
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    padding: 20px;
+  }
+  
+  .header--image {
+    height: 30px;
+    margin-right: 6px;
+  }
+  
+  .header--title {
+    font-size: 1.25rem;
+    margin-right: auto;
+  }
+  
+  .header--project {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+
+  /* footer */
+
+  a{
+    text-decoration: none;
+    color:  hsl(300, 100%, 57%);
+    text-shadow:
+        1px 1px 0 #000
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  
+  footer{
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0),hsla(285, 100%, 50%, 0.5), rgba(168, 24, 216, 0) 100%);
+    border-radius: 0px 0px 0px 0px;
+    margin: 40px 20px 0px 20px; 
+  }

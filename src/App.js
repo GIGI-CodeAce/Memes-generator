@@ -5,6 +5,7 @@ import Settings from './components/fontSettings.js'
 import FooterPage from './components/footer.js'
 import './styles/style.css'
 import './styles/headFoot.css'
+import './styles/mobile.css'
 
 export default function App() {
     return (

@@ -1,0 +1,47 @@
+
+@media (max-width: 400px) {
+  .text--top{
+    font-size: 1.2em;
+  }
+  .meme--image {
+    width: 320px;
+    height: 300px;
+  }
+  .top, .bottom{
+    width: 226px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+    .text--top{
+      font-size: 1.2em;
+    }
+    .meme--image {
+      width: 350px;
+      height: 300px;
+    }
+    .top, .bottom{
+      width: 226px;
+    }
+  }
+
+  @media (min-width: 501px) and (max-width: 600px) {
+    .text--top{
+      font-size: 1.5em;
+    }
+    .meme--image {
+      width: 460px;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 649px) {
+    .meme--image {
+      width: 530px;
+    }
+  }
+  
+  @media (min-width: 650px) and (max-width: 800px) {
+    .meme--image {
+      width: 600px;
+    }
+  }
