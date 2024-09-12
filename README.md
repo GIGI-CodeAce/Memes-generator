@@ -1,1 +1,1 @@
-Memes generator is an online meme creator where you could pick a random meme from up to top 100 most popular memes from the internet and be creative with your text inputs in order to make the one meme everyone will love
+Memes generator is an online meme creator where you could pick a random meme from up to top 100 most popular memes from the internet and be creative with your text inputs in order to make the one meme everyone from your friends group will love!
