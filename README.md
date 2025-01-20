@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center" id="title">Memes Generator</h1>
 
 <p align="center">
