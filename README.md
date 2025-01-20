@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h1 align="center" id="title">Memes Generator</h1>
 
 <p align="center">
@@ -66,7 +65,7 @@ Memes generator is an online meme creator where you could pick a random meme fro
 <h2 align="center">Project Screenshots:</h2>
 <div align="center">
 <h3>Text editing user interface</h3>
- <img src="mdMedia/text-edit.png" alt="project-screenshot"  style="width: 600px; height: 400px">
+ <img src="mdMedia/text-edit.png" alt="project-screenshot"  style="width: 500px; height: 200px">
 <h3>Meme sample</h3>
   <img src="mdMedia/meme.png" alt="project-screenshot" style="width: 100%; height: 400px">
 </div><br></br>
