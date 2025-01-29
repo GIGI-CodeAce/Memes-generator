@@ -1,8 +1,8 @@
 import React from "react"
 import Header from "./components/header"
 import Meme from "./components/meme"
-import Settings from './components/fontSettings.tsx'
-import FooterPage from './components/footer.tsx'
+import Settings from './components/fontSettings'
+import FooterPage from './components/footer'
 import './styles/style.css'
 import './styles/headFoot.css'
 import './styles/mobile.css'
