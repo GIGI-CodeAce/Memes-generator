@@ -1,9 +1,16 @@
 import React, { useState, useEffect } from "react";
 
+interface Meme {
+    id: string;
+    name: string;
+    url: string;
+    width: number;
+    height: number;
+    box_count: number;
+}
+
 export default function Meme() {
-
-
-    const [allMemes, setAllMemes] = useState([]);
+    const [allMemes, setAllMemes] = useState<Meme[]>([]);
     const [meme, setMeme] = useState({
         topText: "one does not simply",
         bottomText: "walk into mordor",
@@ -19,21 +26,21 @@ export default function Meme() {
         getMemes();
     }, []);
 
-    function getRandomItemFromArray(array) {
+    function getRandomItemFromArray(array: Meme[]) {
         const randomIndex = Math.floor(Math.random() * array.length);
         return array[randomIndex];
     }
 
     function getMemeImage() {
         const randomMeme = getRandomItemFromArray(allMemes);
-        const url = randomMeme.url;
+        if (!randomMeme) return; // Handle case where the array is empty
         setMeme(prevMeme => ({
             ...prevMeme,
-            randomImage: url
+            randomImage: randomMeme.url
         }));
     }
 
-    function handleChange(event) {
+    function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
         const { name, value } = event.target;
         setMeme(prevMeme => ({
             ...prevMeme,
@@ -68,9 +75,9 @@ export default function Meme() {
                 </button>
             </div>
             <div className="meme">
-            <img src={meme.randomImage} className="meme--image" alt="Random Meme" />
-            <h2 className="text--top bottom">{meme.topText}</h2>
-            <h2 className="text--top top">{meme.bottomText}</h2>
+                <img src={meme.randomImage} className="meme--image" alt="Random Meme" />
+                <h2 className="text--top bottom">{meme.topText}</h2>
+                <h2 className="text--top top">{meme.bottomText}</h2>
             </div>
         </main>
     );
