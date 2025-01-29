@@ -1,6 +1,7 @@
 
 import React from "react";
- import trollFaceImage from "../components/TrollFace.png";
+
+const trollFaceImage = "/memes/mdMedia/TrollFace.png"
 
 export default function Header() {
 
