@@ -1,8 +1,11 @@
 <h1 align="center" id="title">Memes Generator</h1>
 
 <p align="center">
-  <img src="https://pngimg.com/uploads/trollface/trollface_PNG31.png" alt="Trollface">
+  <img src="https://pngimg.com/uploads/trollface/trollface_PNG31.png" 
+       style="width: 50%; height: auto;" 
+       alt="Trollface">
 </p>
+
 
 <p id="description">
 Memes generator is an online meme creator where you could pick a random meme from up to top 100 most popular memes from the internet and be creative with your text inputs in order to make the one meme everyone from your friends group will love!
