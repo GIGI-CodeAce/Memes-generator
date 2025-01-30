@@ -1,11 +1,10 @@
-import React from "react"
 import Header from "./components/header"
 import Meme from "./components/meme"
 import Settings from './components/fontSettings'
 import FooterPage from './components/footer'
-import './styles/style.css'
-import './styles/headFoot.css'
-import './styles/mobile.css'
+import './styles/style.scss'
+import './styles/headFoot.scss'
+import './styles/mobile.scss'
 
 export default function App() {
     return (

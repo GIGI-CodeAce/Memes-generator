@@ -1,7 +1,7 @@
 <h1 align="center" id="title">Memes Generator</h1>
 
 <p align="center">
-  <img src="/memes/mdMedia/TrollFace.png" alt="project-image" style="width: 40%; height: 300px">
+  <img src="public/TrollFace.png" alt="project-image">
 </p>
 
 <p id="description">
@@ -24,42 +24,37 @@ Memes generator is an online meme creator where you could pick a random meme fro
 
 ```javascript
 // ...
-    function RangeInput(id, min, max, value, onChange, className) {
-        return (
-            <input
-                type="range"
-                id={id}
-                min={min}
-                max={max}
-                value={value}
-                onChange={onChange}
-                className={className}
-            />
-        );
-    }
+    const handleTopY: React.ChangeEventHandler<HTMLInputElement> = (event) => {
+        const newTopY = +event.target.value;
+        setTopAxis([topAxis[0], newTopY]);
+    };
+
+    const handleBottomX: React.ChangeEventHandler<HTMLInputElement> = (event) => {
+        const newBottomX = +event.target.value;
+        setBottomAxis([newBottomX, bottomAxis[1]]);
+    };
+
+    // ...
 
     return (
         <>
-        <div className="slider-container">
-        {RangeInput('bottomX', 30, 70, bottomAxis[0], handleBottomX, 'custom-range-square')}
-        {RangeInput('bottomY', -5, 30, bottomAxis[1], handleBottomY, 'custom-range-square')}
-        {RangeInput('topX', 30, 70, topAxis[0], handleTopX, 'custom-range-circle')}
-        {RangeInput('topY', 50, 84, topAxis[1], handleTopY, 'custom-range-circle')}
-
-            <div className="textSwitches">
-                <span className="slider-value" id="top-label">
-                    Top X: {topAxis[0]}%, Top Y: {topAxis[1]}%
-                </span>
-                <span className="slider-value" id="bottom-label">
-                    Bottom X: {bottomAxis[0]}%, Bottom Y: {bottomAxis[1]}%
-                </span>
-            </div>
-
-            {RangeInput('memeHeight', 300, 600, memeHeight, handleMemeHeight, 'custom-range-circle')}
-            <span className="slider-value" id="meme-height-label">
-                Meme Height: {memeHeight}px
-            </span>
-        </div>
+            <div className="slider-container">
+                <RangeInput
+                    id="topX"
+                    min={30}
+                    max={70}
+                    value={topAxis[0]}
+                    onChange={handleTopX}
+                    className="custom-range-circle"
+                />
+                <RangeInput
+                    id="topY"
+                    min={50}
+                    max={84}
+                    value={topAxis[1]}
+                    onChange={handleTopY}
+                    className="custom-range-circle"
+                />
 // ...
 ```
 <h2 align="center">Project Screenshots:</h2>

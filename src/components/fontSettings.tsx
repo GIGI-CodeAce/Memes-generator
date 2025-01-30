@@ -92,18 +92,8 @@ function Settings() {
                     value={bottomAxis[1]}
                     onChange={handleBottomY}
                     className="custom-range-square"
-                />
-                <RangeInput
-                    id="memeHeight"
-                    min={300}
-                    max={600}
-                    value={memeHeight}
-                    onChange={handleMemeHeight}
-                    className="custom-range-circle"
-                />
-            </div>
-
-            <div className="textSwitches">
+                /><br/>
+                <div className="textSwitches">
                 <span className="slider-value" id="top-label">
                     Top X: {topAxis[0]}%, Top Y: {topAxis[1]}%
                 </span>
@@ -112,7 +102,16 @@ function Settings() {
                 </span>
                 <span className="slider-value" id="meme-height-label">
                     Meme Height: {memeHeight}px
-                </span>
+                </span><br/>
+            </div>
+                <RangeInput
+                    id="memeHeight"
+                    min={300}
+                    max={600}
+                    value={memeHeight}
+                    onChange={handleMemeHeight}
+                    className="custom-range-circle"
+                />
             </div>
 
             <style>{`
