@@ -1,7 +1,7 @@
 <h1 align="center" id="title">Memes Generator</h1>
 
 <p align="center">
-  <img src="[[public/TrollFace.png](https://pngimg.com/uploads/trollface/trollface_PNG42.png)](https://pngimg.com/uploads/trollface/trollface_PNG31.png)" alt="project-image">
+  <img src="https://pngimg.com/uploads/trollface/trollface_PNG31.png" alt="Trollface">
 </p>
 
 <p id="description">
