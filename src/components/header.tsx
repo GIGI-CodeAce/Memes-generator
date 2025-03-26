@@ -1,10 +1,9 @@
-const trollFaceImage = "/trollface.png";
 
 export default function Header() {
     return (
         <header className="header">
             <img 
-                src={trollFaceImage}
+                src='https://pngimg.com/uploads/trollface/trollface_PNG31.png'
                 className="header--image"
                 alt="Troll Face"
             />

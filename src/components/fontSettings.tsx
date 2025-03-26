@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/style.scss";
 
 interface InputProps {
     id: string;
@@ -35,23 +36,23 @@ function Settings() {
 
     const handleTopX: React.ChangeEventHandler<HTMLInputElement> = (event) => {
         const newTopX = +event.target.value;
-        setTopAxis([newTopX, topAxis[1]]);
+        setTopAxis((prev) => [newTopX, prev[1]]);
     };
-
+    
     const handleTopY: React.ChangeEventHandler<HTMLInputElement> = (event) => {
         const newTopY = +event.target.value;
-        setTopAxis([topAxis[0], newTopY]);
+        setTopAxis((prev) => [prev[0], newTopY]);
     };
-
+    
     const handleBottomX: React.ChangeEventHandler<HTMLInputElement> = (event) => {
         const newBottomX = +event.target.value;
-        setBottomAxis([newBottomX, bottomAxis[1]]);
+        setBottomAxis((prev) => [newBottomX, prev[1]]);
     };
-
+    
     const handleBottomY: React.ChangeEventHandler<HTMLInputElement> = (event) => {
         const newBottomY = +event.target.value;
-        setBottomAxis([bottomAxis[0], newBottomY]);
-    };
+        setBottomAxis((prev) => [prev[0], newBottomY]);
+    };    
 
     const handleMemeHeight: React.ChangeEventHandler<HTMLInputElement> = (event) => {
         const newHeight = +event.target.value;

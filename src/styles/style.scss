@@ -3,6 +3,7 @@ body {
   font-family: "Karla", sans-serif;
   margin: 0;
   min-width: 300px;
+  overflow-x: hidden;
 
   main {
     padding: 36px;
@@ -40,41 +41,6 @@ body {
       border-radius: 3px;
     }
   
-    .text--top{
-      position: absolute;
-      left: 50%;
-      width: auto;
-      transform: translateX(-50%);
-      margin: 30px 0;
-      padding: 0 5px;
-      font-family: impact, sans-serif;
-      font-size: 2em;
-      text-transform: uppercase;
-      color: white;
-      letter-spacing: 1px;
-      text-shadow:
-          2px 2px 0 #000,
-          -2px -2px 0 #000,
-          2px -2px 0 #000,
-          -2px 2px 0 #000,
-          0 2px 0 #000,
-          2px 0 0 #000,
-          0 -2px 0 #000,
-          -2px 0 0 #000,
-          2px 2px 5px #000;
-    }
-    
-    .bottom {
-      bottom: 0%;
-      left: 50%;
-      width: 333px;
-    }
-    
-    .top {
-      top: 0%;
-      left: 50%;
-      width: 333px;
-    }
   }
   
   .slider-container {
@@ -123,4 +89,41 @@ body {
     }
   }
   
+}
+
+
+.text--top{
+  position: absolute;
+  left: 50%;
+  width: auto;
+  transform: translateX(-50%);
+  margin: 30px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0%;
+  left: 50%;
+  width: 333px;
+}
+
+.top {
+  top: 0%;
+  left: 50%;
+  width: 333px;
 }

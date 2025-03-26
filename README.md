@@ -1,4 +1,4 @@
-<h1 align="center" id="title">Memes Generator</h1>
+<h1 align="center" id="title">Memes Generator v1.1.2</h1>
 
 <p align="center">
   <img src="https://pngimg.com/uploads/trollface/trollface_PNG31.png" 
