@@ -100,9 +100,6 @@ function Settings() {
                 </span>
                 <span className="slider-value" id="bottom-label">
                     Bottom X: {bottomAxis[0]}%, Bottom Y: {bottomAxis[1]}%
-                </span>
-                <span className="slider-value" id="meme-height-label">
-                    Meme Height: {memeHeight}px
                 </span><br/>
             </div>
                 <RangeInput
@@ -113,6 +110,9 @@ function Settings() {
                     onChange={handleMemeHeight}
                     className="custom-range-circle"
                 />
+                <span className="slider-value" id="meme-height-label">
+                    Meme Height: {memeHeight}px
+                </span>
             </div>
 
             <style>{`
