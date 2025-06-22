@@ -39,11 +39,19 @@ body {
     border: none;
     margin-bottom: 20px;
     cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  .form--button:hover{
+    background: linear-gradient(90.41deg, #A818DA 1.14%, #711F8D 100%);
+  }
+  .form--button:active{
+    color: black;
   }
   
   .meme {
     position: relative;
     text-align: center;
+    overflow: hidden;
   
     .meme--image {
       border-radius: 3px;

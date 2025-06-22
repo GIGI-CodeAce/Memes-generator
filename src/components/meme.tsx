@@ -53,7 +53,7 @@ export default function Meme() {
             <div className="form">
                 <input 
                     type="text"
-                    placeholder="Top text"
+                    placeholder="Text from top"
                     className="form--input"
                     name="topText"
                     value={meme.topText}
@@ -61,13 +61,14 @@ export default function Meme() {
                 />
                 <input 
                     type="text"
-                    placeholder="Bottom text"
+                    placeholder="Text from bottom"
                     className="form--input"
                     name="bottomText"
                     value={meme.bottomText}
                     onChange={handleChange}
                 />
                 <button 
+                    title="Roll a new random meme!"
                     className="form--button"
                     onClick={getMemeImage}
                 >
